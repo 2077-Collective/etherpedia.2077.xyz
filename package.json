@@ -1,0 +1,28 @@
+{
+  "name": "etherpedia",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "postbuild": "pagefind --site dist"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/mdx": "^3.1.2",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/tailwind": "^5.1.0",
+    "@tailwindcss/typography": "^0.5.13",
+    "astro": "^4.11.3",
+    "astro-pagefind": "^1.5.0",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2"
+  },
+  "devDependencies": {
+    "pagefind": "^1.1.0"
+  }
+}

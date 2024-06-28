@@ -41,7 +41,7 @@ const posts = (await getCollection("posts")).sort(
         <ul class="grid grid-flow-row sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
           {
             posts.map((post: any) => (
-              <li class="rounded-xl bg-zinc-100">
+              <li class="rounded-xl border">
                 <a href={`/posts/${post.slug}/`}>
                   <img
                     width={720}
@@ -52,7 +52,8 @@ const posts = (await getCollection("posts")).sort(
                   />
                   <div class="p-4">
                     <h4 class="text-xl">{post.data.title}</h4>
-                    <p class="date">
+                    <p>
+                      {post.data.author && <i>by {post.data.author} - </i>}
                       <FormattedDate date={post.data.pubDate} />
                     </p>
                   </div>

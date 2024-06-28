@@ -7,7 +7,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 
 type Props = CollectionEntry<"posts">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } =
+const { title, description, author, pubDate, updatedDate, heroImage } =
   Astro.props as any;
 ---
 
@@ -38,7 +38,8 @@ const { title, description, pubDate, updatedDate, heroImage } =
               )
             }
           </div>
-          <h1 class="font-bold text-4xl pb-4">{title}</h1>
+          <h1 class="font-bold text-4xl">{title}</h1>
+          <p class="italic pb-4">by {author ?? "2077 Collective"}</p>
           <hr class="pb-2" />
           <div class="prose">
             <slot />

@@ -10,8 +10,8 @@ import { getCollection } from "astro:content";
 import Search from "astro-pagefind/components/Search";
 
 const posts = (await getCollection("posts")).sort(
-  (a: any, b: any) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
-) as any;
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
 ---
 
 <!doctype html>
@@ -21,13 +21,13 @@ const posts = (await getCollection("posts")).sort(
   </head>
   <body class="flex flex-col min-h-screen">
     <Header />
-    <main class="p-8">
+    <main class="">
       <Image
         src={EtherpediaLogo}
         alt="Etherpedia, a 2077 Collective Project"
-        class="mx-auto"
+        class="mx-auto mt-8"
       />
-      <section class="mt-8 max-w-screen-sm mx-auto">
+      <section class="p-8 max-w-screen-sm mx-auto">
         <Search
           id="search"
           className="pagefind-ui"
@@ -36,32 +36,63 @@ const posts = (await getCollection("posts")).sort(
 
         <div id="results"></div>
       </section>
-      <section class="mt-8">
+      <section class="p-8 bg-zinc-100">
+        <div class="max-w-screen-xl mx-auto">
+          <div class="max-w-screen-sm">
+            <h2 class="text-4xl font-semibold mb-4">
+              Learn all about Ethereum here!
+            </h2>
+            <p class="text-xl">
+              The guide to all things Ethereum. We've got the knowledge for you,
+              regardless of if you're a newbie trying to run a full node or a
+              veteran high-frequency trader looking to build advanced MEV
+              strategies.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-8 p-8 max-w-screen-xl mx-auto">
         <label class="text-2xl font-bold">Latest releases</label>
         <ul class="grid grid-flow-row sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
           {
-            posts.map((post: any) => (
-              <li class="rounded-xl border">
-                <a href={`/posts/${post.slug}/`}>
-                  <img
-                    width={720}
-                    height={360}
-                    src={post.data.heroImage}
-                    class="rounded-xl"
-                    alt=""
-                  />
-                  <div class="p-4">
-                    <h4 class="text-xl">{post.data.title}</h4>
-                    <p>
-                      {post.data.author && <i>by {post.data.author} - </i>}
-                      <FormattedDate date={post.data.pubDate} />
-                    </p>
-                  </div>
-                </a>
-              </li>
-            ))
+            posts
+              .sort((post, post2) => {
+                if (post.data.pubDate == post2.data.pubDate) {
+                  return 0;
+                } else if (post.data.pubDate < post2.data.pubDate) {
+                  return 1;
+                } else {
+                  return -1;
+                }
+              })
+              .slice(0, 6)
+              .map((post: any) => (
+                <li class="rounded-xl border">
+                  <a href={`/posts/${post.slug}/`}>
+                    <img
+                      width={720}
+                      height={360}
+                      src={post.data.heroImage}
+                      class="rounded-xl"
+                      alt=""
+                    />
+                    <div class="p-4">
+                      <h4 class="text-xl">{post.data.title}</h4>
+                      <p>
+                        {post.data.author && <i>by {post.data.author} - </i>}
+                        <FormattedDate date={post.data.pubDate} />
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              ))
           }
         </ul>
+
+        <a class="px-4 py-2 bg-zinc-100 rounded mt-4 inline-block" href="/posts"
+          >See all releases</a
+        >
       </section>
     </main>
     <Footer />

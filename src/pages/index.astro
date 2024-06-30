@@ -19,7 +19,9 @@ const posts = (await getCollection("posts")).sort(
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body class="flex flex-col min-h-screen">
+  <body
+    class="flex flex-col min-h-screen dark dark:bg-zinc-900 dark:text-white"
+  >
     <Header />
     <main class="">
       <Image
@@ -36,7 +38,7 @@ const posts = (await getCollection("posts")).sort(
 
         <div id="results"></div>
       </section>
-      <section class="p-8 bg-zinc-100">
+      <section class="p-8 bg-zinc-800">
         <div class="max-w-screen-xl mx-auto">
           <div class="max-w-screen-sm">
             <h2 class="text-4xl font-semibold mb-4">
@@ -90,8 +92,9 @@ const posts = (await getCollection("posts")).sort(
           }
         </ul>
 
-        <a class="px-4 py-2 bg-zinc-100 rounded mt-4 inline-block" href="/posts"
-          >See all releases</a
+        <a
+          class="px-4 py-2 dark:bg-zinc-800 bg-zinc-100 rounded mt-4 inline-block"
+          href="/posts">See all releases</a
         >
       </section>
     </main>

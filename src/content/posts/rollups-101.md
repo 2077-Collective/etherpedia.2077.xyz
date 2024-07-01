@@ -27,7 +27,7 @@ The entire history of Ethereum is the community trying to figure out how to make
 
 Initially, the Ethereum community focused on sharding as a scaling solution. Sharding involves dividing the network into multiple interoperable chains, all coordinated by a central chain, called the “Beacon Chain.” These chains would have been operated by validators distributed into small sections called committees.
 
-//add image
+![image](../assets/TheRoadmapRollups101/image1.png)
 
 The approach isn’t new—various blockchains, such as NEAR and TON, use sharding since day 1.
 
@@ -63,7 +63,7 @@ ZK rollups reach scalability in that the proof is only generated once, and the c
 
 # Is Sky the Limit?
 
-//add image
+![image](../assets/TheRoadmapRollups101/image2.png)
 
 As of the time of writing, rollups process about 110 transactions per second—9 times more than the Ethereum L1. Some rollups, such as Arbitrum, Base, and ZKsync Era, have already seen the record numbers of 150-200 TPS on them alone. The transaction fees on rollups [are less than a cent](https://www.growthepie.xyz/fundamentals/transaction-costs)—orders of magnitude lower than on Ethereum. The [DeFi on rollups is huge](https://defillama.com/chains/Rollup), and the most of Ethereum’s dApps are already deployed on leading ones. Moreover, a lot of projects, such as [Farcaster](https://www.farcaster.xyz), [Worldcoin](https://worldcoin.org), [Zora](https://zora.co), are rollups-native and have deployed on rollups since day 1.
 
@@ -81,7 +81,7 @@ And the most important problem of this complexity is that [tens of billions are 
 
 Training wheels are the trusted points in the system that allow a certain entity to stop or upgrade it in case of a bug. For example, the vast majority of today’s rollups [are instantly upgradable](https://l2beat.com/scaling/risk). This centralization factor is what discourages large projects to build on top of rollups. However, after they become more mature, the training wheels will slowly become obsolete. For example, at the time of writing, OP Stack has recently upgraded to the [Stage 1 trustlessness](https://medium.com/l2beat/introducing-stages-a-framework-to-evaluate-rollups-maturity-d290bb22befe), being the second major rollup after Arbitrum to do this. Arbitrum, in turn, is working on a [BoLD proof system](https://docs.arbitrum.io/how-arbitrum-works/bold/gentle-introduction), which allows it to integrate Stage 2 and become fully trustless.
 
-//add image
+![image](../assets/TheRoadmapRollups101/image3.png)
 
 ## Data Availability
 

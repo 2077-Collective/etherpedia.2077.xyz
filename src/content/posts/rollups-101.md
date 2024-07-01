@@ -1,5 +1,5 @@
 ---
-title: "The Roadmap: Rollups"
+title: "The Roadmap: Rollup Scaling"
 description: "A rollup is a separate blockchain that processes transactions off-chain."
 pubDate: "Jul 01 2024"
 heroImage: "/rollups.png"

@@ -52,7 +52,7 @@ This de facto created the Proposer-Builder Separation in the network: now, the o
 
 It’s obvious that the validators started connecting their nodes to the builders that give the most rewards. As this reward rate fluctuates, the relays have appeared—some kind of builder “aggregators” that automatically choose whoever proposes the most pay for the block. This caused the block production to quickly get into the hands of a small set of sophisticated building actors.
 
-//add image
+![image](../assets/TheRoadmapHowtoTrainYourMEV/image1.png)
 
 _Source: [http://censorship.pics/](http://censorship.pics/)_
 
@@ -102,7 +102,7 @@ One of the solutions that [Justin Drake](https://www.youtube.com/watch?v=XRM0CpG
 
 A great example of a protocol incorporating such a technique is [CoW Swap](https://swap.cow.fi/#/1/swap/WETH). CoW Swap packs all trades in batches and executes them at one time, so it’s impossible to front-run a certain trade inside the batch. Batches can be created and fulfilled by anyone, so the system does not rely on trust.
 
-//add image
+![image](../assets/TheRoadmapHowtoTrainYourMEV/image2.png)
 
 # MEV Burn
 

@@ -2,11 +2,11 @@
 <rect x="0.5" y="0.5" width="249" height="150" fill="white"/>
 <rect x="0.5" y="0.5" width="249" height="150" stroke="black"/>
 <rect x="0.5" y="0.5" width="124" height="150" stroke="black"/>
-<rect x="34" y="38" width="58.0137" height="9.49315" fill="black"/>
-<rect x="34" y="71.7534" width="58.0137" height="9.49315" fill="black"/>
-<rect x="34" y="105.507" width="58.0137" height="9.49315" fill="black"/>
+<rect x="18" y="16" width="90" height="14.7273" fill="black"/>
+<rect x="18" y="68.3636" width="90" height="14.7273" fill="black"/>
+<rect x="18" y="120.727" width="90" height="14.7273" fill="black"/>
 <rect x="124.5" y="0.5" width="125" height="150" stroke="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M164.288 114.49L171.191 122L209.031 79.9726L202.126 72.4629L164.288 114.49Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M164.288 92.5991L171.191 100.109L209.031 58.0814L202.126 50.5717L164.288 92.5991Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M164 71.0274L170.903 78.5371L208.743 36.5097L201.839 29L164 71.0274Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M155.409 131.502L165.22 142.175L219 82.4443L209.187 71.7712L155.409 131.502Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M155.409 100.39L165.22 111.063L219 51.3316L209.187 40.6585L155.409 100.39Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M155 69.731L164.811 80.4041L218.591 20.6731L208.778 10L155 69.731Z" fill="black"/>
 </svg>

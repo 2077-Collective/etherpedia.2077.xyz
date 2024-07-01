@@ -1,5 +1,5 @@
 ---
-title: "Improving PoS"
+title: "The Roadmap: Improving PoS"
 description: "In this article, we’ll dive into the proposals for improving Ethereum's PoS, as outlined in Vitalik's roadmap."
 pubDate: "Jul 01 2024"
 heroImage: "/improving-pos.jpg"

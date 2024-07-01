@@ -1,14 +1,12 @@
-<svg width="209" height="209" viewBox="0 0 209 209" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="104.5" cy="104.5" r="104.5" fill="url(#paint0_linear_75_3)"/>
-<path d="M208.5 104.5C208.5 108.608 205.736 112.621 200.498 116.354C195.272 120.078 187.678 123.453 178.248 126.295C159.396 131.978 133.322 135.5 104.5 135.5C75.6779 135.5 49.6038 131.978 30.7516 126.295C21.3224 123.453 13.7281 120.078 8.50231 116.354C3.2639 112.621 0.5 108.608 0.5 104.5C0.5 100.392 3.2639 96.3792 8.50231 92.646C13.7281 88.9217 21.3224 85.5472 30.7516 82.7049C49.6038 77.0221 75.6779 73.5 104.5 73.5C133.322 73.5 159.396 77.0221 178.248 82.7049C187.678 85.5472 195.272 88.9217 200.498 92.646C205.736 96.3792 208.5 100.392 208.5 104.5Z" stroke="white"/>
-<path d="M78 104.595L104.896 114.872V54L78 104.595Z" fill="white"/>
-<path d="M104.896 114.872L131 104.595L104.896 54V114.872Z" fill="white"/>
-<path d="M78 110.919L104.896 156.5V121.986L78 110.919Z" fill="white"/>
-<path d="M104.896 121.986V156.5L131 110.919L104.896 121.986Z" fill="white"/>
-<defs>
-<linearGradient id="paint0_linear_75_3" x1="104.5" y1="0" x2="104.5" y2="209" gradientUnits="userSpaceOnUse">
-<stop stop-color="#A9E8F0"/>
-<stop offset="1" stop-color="#7FE783"/>
-</linearGradient>
-</defs>
+<svg width="250" height="151" viewBox="0 0 250 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="249" height="150" fill="white"/>
+<rect x="0.5" y="0.5" width="249" height="150" stroke="black"/>
+<rect x="0.5" y="0.5" width="124" height="150" stroke="black"/>
+<rect x="34" y="38" width="58.0137" height="9.49315" fill="black"/>
+<rect x="34" y="71.7534" width="58.0137" height="9.49315" fill="black"/>
+<rect x="34" y="105.507" width="58.0137" height="9.49315" fill="black"/>
+<rect x="124.5" y="0.5" width="125" height="150" stroke="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M164.288 114.49L171.191 122L209.031 79.9726L202.126 72.4629L164.288 114.49Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M164.288 92.5991L171.191 100.109L209.031 58.0814L202.126 50.5717L164.288 92.5991Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M164 71.0274L170.903 78.5371L208.743 36.5097L201.839 29L164 71.0274Z" fill="black"/>
 </svg>

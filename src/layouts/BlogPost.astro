@@ -16,7 +16,9 @@ const { title, description, author, pubDate, updatedDate, heroImage } =
     <BaseHead title={title} description={description} />
   </head>
 
-  <body>
+  <body
+    class="flex flex-col min-h-screen dark dark:bg-zinc-900 dark:text-white"
+  >
     <Header />
     <main>
       <article class="mx-auto max-w-screen-md">
@@ -41,7 +43,7 @@ const { title, description, author, pubDate, updatedDate, heroImage } =
           <h1 class="font-bold text-4xl">{title}</h1>
           <p class="italic pb-4">by {author ?? "2077 Collective"}</p>
           <hr class="pb-2" />
-          <div class="prose">
+          <div class="prose dark:prose-invert">
             <slot />
           </div>
         </div>

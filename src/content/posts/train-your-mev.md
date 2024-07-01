@@ -2,7 +2,7 @@
 title: "The Roadmap: How to Train Your MEV"
 description: "While being helpful when used correctly, MEV might become a significant centralization concern in all today’s crypto networks."
 pubDate: "Jul 01 2024"
-heroImage: "/the-merge.jpg"
+heroImage: "/train-your-mev.png"
 ---
 
 # Introduction

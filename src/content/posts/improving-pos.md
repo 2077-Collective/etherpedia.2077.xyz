@@ -1,8 +1,8 @@
 ---
-title: "The Roadmap: Improving PoS"
+title: "The Roadmap: Improving Proof of Stake"
 description: "In this article, we’ll dive into the proposals for improving Ethereum's PoS, as outlined in Vitalik's roadmap."
 pubDate: "Jul 01 2024"
-heroImage: "/improving-pos.jpg"
+heroImage: "/improving-pos.png"
 ---
 
 # Introduction

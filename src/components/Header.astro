@@ -1,13 +1,19 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+import EtherpediaLogo from "../content/logo.png";
+import { Image } from "astro:assets";
 ---
 
 <header>
   <nav
     class="flex p-4 w-full dark:bg-zinc-800 bg-zinc-200 gap-4 justify-between items-center"
   >
-    <h2 class="font-semibold text-xl"><a href="/">{SITE_TITLE}</a></h2>
+    <h2 class="font-semibold text-xl">
+      <a href="/"
+        ><Image src={EtherpediaLogo} alt="Etherpedia" class="max-w-32" /></a
+      >
+    </h2>
     <div class="flex flex-row gap-4">
       <a href="https://twitter.com/2077Collective" target="_blank">
         <span class="sr-only">Follow the 2077 Collective on Twitter</span>

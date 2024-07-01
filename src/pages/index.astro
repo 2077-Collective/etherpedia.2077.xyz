@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import EtherpediaLogo from "../content/etherpedia.svg";
+import EtherpediaLogo from "../content/logo.png";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { Image } from "astro:assets";
 import FormattedDate from "../components/FormattedDate.astro";
@@ -26,8 +26,8 @@ const posts = (await getCollection("posts")).sort(
     <main class="">
       <Image
         src={EtherpediaLogo}
-        alt="Etherpedia, a 2077 Collective Project"
-        class="mx-auto mt-8"
+        alt="Etherpedia"
+        class="mx-auto mt-8 max-w-72"
       />
       <section class="p-8 max-w-screen-sm mx-auto">
         <Search
@@ -47,8 +47,7 @@ const posts = (await getCollection("posts")).sort(
             <p class="text-xl">
               The guide to all things Ethereum. We've got the knowledge for you,
               regardless of if you're a newbie trying to run a full node or a
-              veteran high-frequency trader looking to build advanced MEV
-              strategies.
+              veteran liquidity provider building delta-neutral strategies.
             </p>
           </div>
         </div>

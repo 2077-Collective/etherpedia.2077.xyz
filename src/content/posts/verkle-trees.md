@@ -25,11 +25,11 @@ Every transaction happening in the Ethereum Virtual Machine incurs a _state tran
 
 The Ethereum’s state is stored in the form of a Merkle Tree. It was chosen because Merkle Trees allow for generation of short (compared to the size of the tree) proofs that a certain element exists in the tree.
 
-//add image
+![image](../assets/TheRoadmapVerkleTreesandStatelessness/image1.png)
 
 In Merkle Trees, all elements, called leaves, are [hashed](https://en.wikipedia.org/wiki/Hash_function) in pairs (not quite pairs, but we’ll skip it for now), these pairs get hashed with other pairs, and this process is repeated until the root of the tree is reached. The root is some kind of “super-hash” which was made by hashing all the elements in the tree. This means that by having an element, a tree root, and the hashes of neighboring elements at all heights, we can verify that the element exists in the tree, without revealing the entire tree!
 
-//add image
+![image](../assets/TheRoadmapVerkleTreesandStatelessness/image2.png)
 
 In this example, to verify the account 0xf2ea, we hash its value into C, get the hash D of the neighboring element, and hash their combination to get A. We then get the hash B, and hash the combination of A and B to get our state root! This way, we only needed one element and two hashes of neighboring elements, instead of all the four elements.
 
@@ -53,7 +53,7 @@ As you might have guessed, the point of Verkle Trees is to decrease the size of 
 
 Instead of hashing, Verkle trees use special cryptographic primitives, called vector commitments (hence the name). These commitments allow for the proof to only provide all the parent elements, without neighboring ones.
 
-//add image
+![image](../assets/TheRoadmapVerkleTreesandStatelessness/image3.png)
 
 This, in turn, allows us to make the tree much wider. For example, from two elements per leaf, to 256—once a byte. All this makes Verkle proofs significantly smaller than Merkle proofs.
 

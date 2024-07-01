@@ -39,7 +39,7 @@ Even though it’s practically unfeasible to detect the node of a certain valida
 
 To prevent such an attack, we have to implement a mechanism that would not reveal the upcoming proposers to anyone but the proposers themselves. This idea is what’s called “Secret Leader Election.” The existing design proposals are in their early research stages, but the leading one, which we can use as an example, is [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763).
 
-![image](../src/content/assets/TheRoadmapImprovingProofofStakeEvenFurther/image1.png)
+![image](../assets/TheRoadmapImprovingProofofStakeEvenFurther/image1.png)
 
 The actual specification contains a lot of cryptography, but the general workflow is as follows:
 
@@ -60,7 +60,7 @@ Someone smart came up with this thought, and the _Distributed Validator Technolo
 
 DVT allows a single validator to be operated by multiple nodes, spread across different locations and operators. A validator's private key is split among multiple nodes using threshold cryptography. This way, these nodes perform validator duties (attestations, block proposals) without any single node having full control over the validator.
 
-![image](../src/content/assets/TheRoadmapImprovingProofofStakeEvenFurther/image2.png)
+![image](../assets/TheRoadmapImprovingProofofStakeEvenFurther/image2.png)
 
 This approach has numerous advantages:
 

@@ -15,9 +15,9 @@ While on-chain verification costs on both types of rollups remain static no matt
 
 A long time ago, when rollups were just invented, the only way to store data on Ethereum was to inscribe it into the transactions, keeping it in the blockchain forever. This kind of data was very expensive, as the block space is also demanded by users of Ethereum’s dApps, and in the hours of high demand, the price for data was increasing as well. Realistically, rollups could not process [more than about 110 TPS using block space](https://mirror.xyz/alexhook.eth/y9PTlM6tVr0H8X68r1LV2UwAnT9D6u1MEEiUFvcpyG0), and no matter the capacity, the transactions were expensive because of _data_.
 
-![image](../assets/TheRoadmapTerabytesofDataperSecond/image1.png)
+![image](../assets/TheRoadmapTerabytesofDataperSecond/image3.png)
 
-The median rollup transaction fees as of 19 Feb 2024 (pre-Blobs). Source: growthepie.xyz
+_The median rollup transaction fees as of 19 Feb 2024 (pre-Blobs). Source: https://growthepie.xyz_
 
 Shortly after the inception of rollups the community has realized the necessity in making Ethereum store data temporarily, so that rollups don’t overpay for data availability and don’t overload the block space.
 
@@ -29,7 +29,7 @@ This upgrade introduced temporary data cells, called “Blobs,” that are rough
 
 These proofs don’t make much sense for ZK rollups, as those can simply _(figurative; it’s pretty complex as well)_ generate an equivalence ZK proof for the blob, which would then be used to generate a validity proof for the state. They’re mostly needed for optimistic rollups. These short proofs allow them to reveal only a small portion of the blob which is being contested, instead of revealing the entire blob in the blockchain.
 
-![image](../assets/TheRoadmapTerabytesofDataperSecond/image2.png)
+![image](../assets/TheRoadmapTerabytesofDataperSecond/image1.png)
 
 _The features of KZG from [my blobs explainer article (technical!)](https://mirror.xyz/alexhook.eth/W4PYt5zGWjw9VcB8Z6KIJDoyCU0RPA1d304cM0J75mQ)_
 
@@ -47,7 +47,7 @@ The characteristics of blobs allow us to implement Data Availability Sampling (D
 - Thanks to commitment schemes, validators can probabilistically verify that validators in another subnet store their columns by asking for multiple samples and verifying them against the commitment. This way, validators can be sure that everyone stores their assigned data without downloading the entire data, only a few samples.
 - As long as at least 50% of columns are available, all the blobs can be recovered.
 
-![image](../assets/TheRoadmapTerabytesofDataperSecond/image3.png)
+![image](../assets/TheRoadmapTerabytesofDataperSecond/image4.png)
 
 Technically, this technique should allow the network to handle at least 64 times more blobs than it handles today (6 per block). However, this proposal specifies reusing an existing networking stack to handle DAS for the simplicity of the implementation. This stack doesn’t allow to efficiently handle this much data. The targeted number for PeerDAS is 32–64 blobs per block, with potential increase to 128.
 
@@ -57,7 +57,7 @@ The capacity of this PeerDAS is ~680 KB/s. Depending on the rollup, this is ~650
 
 This becomes complicated.
 
-![image](../assets/TheRoadmapTerabytesofDataperSecond/image4.png)
+![image](../assets/TheRoadmapTerabytesofDataperSecond/image2.png)
 
 In short, instead of columns, now there’s a matrix, and validators store its cells. This structure allows for more efficient sampling, and increases the targeted blob number to 64-128, with potential increase to 256.
 

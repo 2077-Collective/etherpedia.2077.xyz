@@ -39,7 +39,7 @@ Even though it’s practically unfeasible to detect the node of a certain valida
 
 To prevent such an attack, we have to implement a mechanism that would not reveal the upcoming proposers to anyone but the proposers themselves. This idea is what’s called “Secret Leader Election.” The existing design proposals are in their early research stages, but the leading one, which we can use as an example, is [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763).
 
-![image](../assets/TheRoadmapImprovingProofofStakeEvenFurther/image1.png)
+![image](../assets/TheRoadmapImprovingProofofStakeEvenFurther/image2.png)
 
 The actual specification contains a lot of cryptography, but the general workflow is as follows:
 
@@ -60,7 +60,7 @@ Someone smart came up with this thought, and the _Distributed Validator Technolo
 
 DVT allows a single validator to be operated by multiple nodes, spread across different locations and operators. A validator's private key is split among multiple nodes using threshold cryptography. This way, these nodes perform validator duties (attestations, block proposals) without any single node having full control over the validator.
 
-![image](../assets/TheRoadmapImprovingProofofStakeEvenFurther/image2.png)
+![image](../assets/TheRoadmapImprovingProofofStakeEvenFurther/image1.png)
 
 This approach has numerous advantages:
 
@@ -86,7 +86,7 @@ To speed things up, we need to finalize every block, AKA slot in the Consensus L
 
 There are many SSF designs, but they all boil down to one point: it makes no sense to secure the network with 70 billion dollars if it contains 50. It’s pretty much impossible to get at least 7 billion dollars worth of ETH, so this excess economic security is an overkill that incurs too much load on the network. To minimize the number of signatures from the status quo, we need to:
 
-1. Increase the maximum effective balance for validators. Currently, validators are limited to 32 ETH. This means large staking pools have to spin up thousands of validators, each producing at least one signature per epoch. By allowing these pools to combine their stake into fewer validators, we can reduce the validator count to _[probably few enough to process per slot](https://ethresear.ch/t/sticking-to-8192-signatures-per-slot-post-ssf-how-and-why/17989)_. [EIP-7251](https://eips.ethereum.org/EIPS/eip-7251) does exactly this and is planned for the next Pectra upgrade in Q1 2025. \
+1. Increase the maximum effective balance for validators. Currently, validators are limited to 32 ETH. This means large staking pools have to spin up thousands of validators, each producing at least one signature per epoch. By allowing these pools to combine their stake into fewer validators, we can reduce the validator count to _[probably few enough to process per slot](https://ethresear.ch/t/sticking-to-8192-signatures-per-slot-post-ssf-how-and-why/17989)_. [EIP-7251](https://eips.ethereum.org/EIPS/eip-7251) does exactly this and is planned for the next Pectra upgrade in Q1 2025.
 
 2. Reduce the number of validators needed for finality. Even if the above decrease is enough for SSF today, in the future the nodes might no longer be capable of handling this many validators per slot. The latest SSF proposals, including [Orbit](https://ethresear.ch/t/orbit-ssf-solo-staking-friendly-validator-set-management-for-ssf/19928) and [Vitalik’s rotating participation](https://ethresear.ch/t/sticking-to-8192-signatures-per-slot-post-ssf-how-and-why/17989#approach-3-rotating-participation-ie-committees-but-accountable-5), in varying implementations, in fact, suggest to make validators with smaller stake vote less often. This way, the actual validator load is reduced more than the economic security.
 

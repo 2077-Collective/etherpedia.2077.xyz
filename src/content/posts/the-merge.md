@@ -17,11 +17,11 @@ _— Wait, what’s Proof-of-Work and Proof-of-Stake? Why are they even necessar
 
 Unlike traditional banking systems, crypto networks have no central server processing all transactions. Instead, all network participants, called nodes, process transactions on their computers and exchange information. This decentralized approach eliminates the need to trust a single entity with everyone's funds, allowing users to verify all transactions independently.
 
-![image](../assets/TheRoadmapEthereumProofofStakeandtheMerge/image1.png)
+![image](../assets/TheRoadmapEthereumProofofStakeandtheMerge/image4.png)
 
 But what if a user sends two mutually exclusive transactions at the same time? How can nodes agree on what transaction appeared first? Probably, they should confirm the first transaction they received, and the most common first transaction will be approved by the other nodes.
 
-![image](../assets/TheRoadmapEthereumProofofStakeandtheMerge/image2.png)
+![image](../assets/TheRoadmapEthereumProofofStakeandtheMerge/image6.png)
 
 The infeasibility of this approach is in that the nodes, obviously, authenticate each other via internet connection. This means that the attacker can run multiple nodes to fake the consensus about a certain transaction.
 
@@ -71,7 +71,7 @@ If ones behaves maliciously—for example, vote for two distinct blocks or produ
 
 - **Energy Efficiency:** A single validator consumes as much electricity as a simple network node. This means the network's consensus energy consumption remains negligible regardless of network size, allowing PoS networks to scale globally with minimal environmental impact.
 - **Lower Entry Barrier:** Anyone with the minimum stake can independently produce blocks. In Ethereum, a single validator requires 32 ETH (about $110,000 at current prices), which can be reclaimed at any time. Moreover, validators receive voting rewards regardless of block production. In contrast, to produce a Bitcoin block once a year on average, [one must spend ~$250,000 on ASICs and ~$25,000 annually on electricity](https://x.com/alexhooketh/status/1807371630890405945), with completely random production rates.
-- **Security:** If a substantial portion of a currency’s total supply is staked, it might simply be impossible for an attacker to find enough liquidity to form a significant stake for attack. For instance, [about 33 million ETH](beaconcha.in) is currently staked in Ethereum. To attack the network, an attacker would need to either somehow steal 22 million ETH (~$74 billion) or buy 66 million ETH (~$223 billion) to control ⅔ of the total stake. Given Ether's total supply of about 120 million, such an attack is currently infeasible.
+- **Security:** If a substantial portion of a currency’s total supply is staked, it might simply be impossible for an attacker to find enough liquidity to form a significant stake for attack. For instance, [about 33 million ETH](beaconcha.in) is currently staked in Ethereum. To attack the network, an attacker would need to either somehow steal 22 million ETH (\~$74 billion) or buy 66 million ETH (\~$223 billion) to control ⅔ of the total stake. Given Ether's total supply of about 120 million, such an attack is currently infeasible.
 
 # Ethereum’s Consensus
 
@@ -115,7 +115,7 @@ With the bomb in place, those disagreeing with the transition would need to impl
 
 And this actually helped—[ETHW fork](https://coinmarketcap.com/currencies/ethereum-pow/), [sponsored and coordinated by Justin Sun](https://www.coindesk.com/markets/2022/09/16/ethereum-proof-of-work-fork-crashes-as-justin-suns-poloniex-supports-rival-fork/), owner of the Tron Network, had to undergo a hard fork that forced the chain to launch several hours after The Merge of the canonical chain. This divergence from the canonical chain, combined with a lack of supporting infrastructure, [led to the death of the fork shortly after its inception](https://coinmarketcap.com/currencies/ethereum-pow/).
 
-![image](../assets/TheRoadmapEthereumProofofStakeandtheMerge/image4.png)
+![image](../assets/TheRoadmapEthereumProofofStakeandtheMerge/image7.png)
 
 _Justin Sun with the CEO of ETHW. You can notice pain in this smile._
 
@@ -150,7 +150,7 @@ Shortly after, burn rate due to [EIP-1559 burning mechanism](https://eips.ethere
 
 Electricity consumption plummeted by 99.95%, [from levels comparable to Finland's consumption to nearly an order of magnitude lower than Netflix's infrastructure](https://ethereum.org/en/energy-consumption/). Ethereum's carbon footprint decreased almost 10,000-fold—from 11,016,000 to 870 tonnes CO2e.
 
-![image](../assets/TheRoadmapEthereumProofofStakeandtheMerge/image6.png)
+![image](../assets/TheRoadmapEthereumProofofStakeandtheMerge/image1.png)
 
 _Graph for comparison_
 
@@ -160,7 +160,7 @@ Finally, Ethereum evolved into an unassailable and unstoppable world machine, re
 
 After about 8 months, on April 12, 2023, Ethereum implemented another hard fork—Shapella. This upgrade allowed validators to withdraw their stake from the Consensus Layer. Specifically, users could now choose to withdraw all rewards above 32 ETH or withdraw their entire stake, deactivating their validator. This upgrade completed the cycle of connection between Execution and Consensus layers, unifying them into a single Ethereum network.
 
-![image](../assets/TheRoadmapEthereumProofofStakeandtheMerge/image7.png)
+![image](../assets/TheRoadmapEthereumProofofStakeandtheMerge/image2.png)
 
 The Merge undoubtedly stands as Ethereum's most significant upgrade, being the foundation stone for all subsequent improvements and paving the way for Ethereum to scale to the next billion users. By liquidating the technical debt of the insecure and outdated Proof-of-Work system, it greatly simplifies the development of new technologies in Ethereum. For instance, [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), [which increased rollups' TPS by 5-10x](https://mirror.xyz/alexhook.eth/y9PTlM6tVr0H8X68r1LV2UwAnT9D6u1MEEiUFvcpyG0), would not have been feasible without Proof-of-Stake!
 

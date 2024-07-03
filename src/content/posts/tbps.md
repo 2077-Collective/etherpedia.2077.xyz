@@ -3,7 +3,7 @@ title: "The Roadmap: Data Availability - Terabytes per Second"
 description: "If we want to handle millions of transactions per second, the Ethereum network must process gigabytes, if not terabytes, of data in real-time."
 pubDate: "Jul 01 2024 12:00:04"
 heroImage: "/tbps.png"
-author: "Alex Hook"
+author: "Alex Hook (@alexhooketh)"
 ---
 
 # Introduction

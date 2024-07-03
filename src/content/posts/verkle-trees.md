@@ -3,7 +3,7 @@ title: "The Roadmap: Verkle Trees"
 description: "We’ll explore the large part of The Verge, one of the steps of the roadmap, which consists of the related proposals."
 pubDate: "Jul 01 2024 12:00:06"
 heroImage: "/verkle-trees.png"
-author: "Alex Hook"
+author: "Alex Hook (@alexhooketh)"
 ---
 
 # Introduction

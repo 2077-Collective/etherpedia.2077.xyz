@@ -3,7 +3,7 @@ title: "The Roadmap: Ethereum, Proof-of-Stake, and the Merge"
 description: "This article will provide a (relatively) high level overview of The Merge and its significance."
 pubDate: "Jul 01 2024 12:00:01"
 heroImage: "/the-merge.png"
-author: "Alex Hook"
+author: "Alex Hook (@alexhooketh)"
 ---
 
 # Introduction

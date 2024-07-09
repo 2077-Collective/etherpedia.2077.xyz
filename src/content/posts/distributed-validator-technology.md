@@ -2,7 +2,7 @@
 title: "Distributed Validator Technology (DVT)"
 description: "In this article, we’ll dive into the proposals for improving Ethereum's PoS, as outlined in Vitalik's roadmap."
 pubDate: "Jul 09 2024 12:00:02"
-heroImage: "/improving-pos.png"
+heroImage: "/distributedValidator.webp"
 author: "Yanshu"
 ---
 

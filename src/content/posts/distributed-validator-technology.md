@@ -6,8 +6,6 @@ heroImage: "/distributedValidator.webp"
 authors:
   - name: "OxYanshu"
     twitterHandle: "0xYanshu"
-  - name: "Fikunmi"
-    twitterHandle: "fikunmi_ap"
 ---
 
 # **Introduction**

@@ -45,7 +45,7 @@ const { title, description, authors, pubDate, updatedDate, heroImage } =
           <div class="flex items-center gap-x-1.5">
             <span>By</span>
 
-            {authors.map((author, index) => (
+            {authors.map((author: {name: string, twitterHandle: string }, index: number) => (
               <p class="italic py-4">
                 {index < authors.length - 1 ? (
                   <>

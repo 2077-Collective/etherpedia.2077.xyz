@@ -80,17 +80,13 @@ const posts = (await getCollection("posts")).sort(
                     <div class="p-4">
                       <h4 class="text-xl">{post.data.title}</h4>
                       <p>
-                        {post.data.authors && (
-                          <i>
-                            by{" "}
-                            {post.data.authors
-                              .map((author) => author.name)
-                              .join(", ")}{" "}
-                            -
-                          </i>
-                        )}
-                        <FormattedDate date={post.data.pubDate} />
-                      </p>
+  {post.data.authors && (
+    <i>
+      by {post.data.authors.map((author: { name: string, twitterHandle: string }) => author.name).join(', ')} - 
+    </i>
+  )}
+  <FormattedDate date={post.data.pubDate} />
+</p>
                     </div>
                   </a>
                 </li>

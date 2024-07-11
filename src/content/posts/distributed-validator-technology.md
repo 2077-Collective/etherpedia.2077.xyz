@@ -30,7 +30,7 @@ Traditional validator setups on Ethereum often face centralization risks and hig
 Distributed Validator Technology revolutionizes Ethereum's validator ecosystem by distributing responsibilities across multiple machines. This allows Ethereum PoS Validators to run on more than one node or machine, enabling a cluster of nodes operated by individuals, groups, or communities to function as a single validator on Ethereum. Running validators as clusters improves their resiliency and significantly reduces the slashing risk for honest validators, irrespective of their scale. This makes staking more robust and accessible for all validators.
 
 ![image](../assets/TheRoadMapDistributedValidatorTechnology/image3.webp)
-<span class="text-base italic text-center"><a href="https://rattibha.com/thread/1530589456872271872?ref=blog.pantherprotocol.io" target="_blank">(source)</a>
+<span class="text-base font-bold text-center"><a class=" font-bold" href="https://rattibha.com/thread/1530589456872271872?ref=blog.pantherprotocol.io" target="_blank">(source)</a>
 <span>
 
 # **How does DVT Work?**
@@ -119,17 +119,15 @@ Different cluster sizes can tolerate varying numbers of Byzantine and crash node
 - The Simple DVT Module (sDVTm) allows solo and community stakers, alongside professional node operators, to participate in running validators using Lido's protocol by leveraging Obol and SSV Network’s DVT solutions to ensure liveliness, resiliency and security. This move diversifies the Lido Node Operator set significantly and strengthens Ethereum's overall validator infrastructure
 - This module, approved via an on-chain Aragon vote in February 2024, representing a concerted effort to enhance decentralization and operational robustness within the Lido protocol.
 - Following the successful and impressive results during various testing phases on the testnet, DVT demonstrated superior uptime, success rates, and overall effectiveness. Consequently, Lido has begun rolling out the [simple DVT module on the mainnet.](https://blog.lido.fi/simpledvt-new-phase-for-lido-on-ethereum/)
-  
-- [**Simple DVT: Obol Testnet Results**](https://blog.lido.fi/simpledvt-obol-testnet-results/)
 
 ![image](../assets/TheRoadMapDistributedValidatorTechnology/image6.webp)
-
-
-- [**Simple DVT: SSV Testnet Results**](https://blog.lido.fi/simpledvt-ssv-testnet-results/)
-
+<span class="text-base font-extrabold text-center"><a class=" font-bold" href="https://blog.lido.fi/simpledvt-obol-testnet-results/" target="_blank">Source: Simple DVT: Obol Testnet Results</a>
+<span>
 
 ![image](../assets/TheRoadMapDistributedValidatorTechnology/image7.webp)
-    
+<span class="text-base text-center"><a class=" font-bold" href="https://blog.lido.fi/simpledvt-ssv-testnet-results/" target="_blank">Source: Simple DVT: SSV Testnet Results</a>
+<span>
+
 - When new depositable ETH enters the Lido protocol, it will first flow into the Simple DVT Module. The Simple DVT Module will continue to accept ETH deposits until it either exhausts its capacity for depositable validators or reaches its operational limits.
 
 ### **Operation Solo Staker: Empowering Decentralized Ethereum Validation**

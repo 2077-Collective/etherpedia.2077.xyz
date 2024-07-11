@@ -30,6 +30,8 @@ Traditional validator setups on Ethereum often face centralization risks and hig
 Distributed Validator Technology revolutionizes Ethereum's validator ecosystem by distributing responsibilities across multiple machines. This allows Ethereum PoS Validators to run on more than one node or machine, enabling a cluster of nodes operated by individuals, groups, or communities to function as a single validator on Ethereum. Running validators as clusters improves their resiliency and significantly reduces the slashing risk for honest validators, irrespective of their scale. This makes staking more robust and accessible for all validators.
 
 ![image](../assets/TheRoadMapDistributedValidatorTechnology/image3.webp)
+<span class="text-base italic text-center"><a href="https://rattibha.com/thread/1530589456872271872?ref=blog.pantherprotocol.io" target="_blank">(source)</a>
+<span>
 
 # **How does DVT Work?**
 
@@ -37,7 +39,7 @@ DVT operates on an Active/Active model where multiple nodes or machines work tog
 
 ### **Distributed Validator (DV) Cluster**
 
-A ****DV cluster is made up of individual machines or nodes holding a portion of the complete validator key, which ensures that the entire validator key is never stored in one place at any time, enhancing security.
+A **DV cluster** is made up of individual machines or nodes holding a portion of the complete validator key, which ensures that the entire validator key is never stored in one place at any time, enhancing security.
 
 ### **Threshold BLS Aggregation**
 
@@ -88,7 +90,7 @@ Different cluster sizes can tolerate varying numbers of Byzantine and crash node
 - Charon's deployment on Ethereum Mainnet saw swift integration by industry giants like Lido and EtherFi, committing over $1.5 billion worth of stake to Obol DVs. Currently, Charon supports more than 175 operators across 35 countries, marking a significant stride towards decentralizing Ethereum's validator set.
 - Obol recently released [Charon 1.0](https://blog.obol.org/releasing-charon-1-0/), the first long-term support (LTS) version of their DV middleware client.
 - On May 11th and 12th, the Beacon Chain faced two distinct incidents where finality could not be achieved for 3 and 8 epochs, respectively. This issue arose from an exceptional scenario that placed a high load on some of the Consensus Layer clients.
-- 
+
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">We can start putting this loss of finality issue behind us, <a href="https://twitter.com/Teku_Consensys?ref_src=twsrc%5Etfw">@Teku_ConsenSys</a> and <a href="https://twitter.com/prylabs?ref_src=twsrc%5Etfw">@prylabs</a> have deployed fixes that will prevent the attestation flooding. This is one step on our diversity &amp; decentralization journey, let&#39;s learn from it and move forward with greater purpose. <a href="https://t.co/cSRgPTWeuy">pic.twitter.com/cSRgPTWeuy</a></p>&mdash; superphiz.eth 🦇🔊🛡️ (@superphiz) <a href="https://twitter.com/superphiz/status/1657303471098404866?ref_src=twsrc%5Etfw">May 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - Notably, during this period, Obol had onboarded their first set of mainnet DV clusters in the Alpha Phase. None of these mainnet DVs were impacted by the outage. This resilience was due to the clusters running a diverse range of consensus clients in each node, which created fault tolerance within the cluster.
@@ -111,18 +113,19 @@ Different cluster sizes can tolerate varying numbers of Byzantine and crash node
 
 # **Leveling the Playing Field: DVT’s Role in the Future of Ethereum Staking**
 
-### [**Lido](https://lido.fi/) Simple DVT**
+### [**Lido Simple DVT**](https://lido.fi/)
 
-- Now coming to Lido Finance, it holds a significant importance in #Ethereum staking. [Around 30% $ETH Deposited to Beacon Chain is through Lido](https://dune.com/LidoAnalytical/Lido-Finance-Extended). To address concerns about centralisations and to expand the Lido Node Operator set to solo stakers and the community, Lido Finance last year proposed the ["Staking Router Module Proposal: Simple DVT,"](https://research.lido.fi/t/staking-router-module-proposal-simple-dvt/5625) in collaboration with leading the #DVT networks Obol & SSV Network.
+- Now coming to Lido Finance, it holds a significant importance in #Ethereum staking. [Around 30% $ETH Deposited to Beacon Chain is through Lido](https://dune.com/LidoAnalytical/Lido-Finance-Extended). To address concerns about centralisations and to expand the Lido Node Operator set to solo stakers and the community, Lido Finance last year proposed the ["Staking Router Module Proposal: Simple DVT,"](https://research.lido.fi/t/staking-router-module-proposal-simple-dvt/5625) in collaboration with leading the DVT networks Obol & SSV Network.
 - The Simple DVT Module (sDVTm) allows solo and community stakers, alongside professional node operators, to participate in running validators using Lido's protocol by leveraging Obol and SSV Network’s DVT solutions to ensure liveliness, resiliency and security. This move diversifies the Lido Node Operator set significantly and strengthens Ethereum's overall validator infrastructure
 - This module, approved via an on-chain Aragon vote in February 2024, representing a concerted effort to enhance decentralization and operational robustness within the Lido protocol.
 - Following the successful and impressive results during various testing phases on the testnet, DVT demonstrated superior uptime, success rates, and overall effectiveness. Consequently, Lido has begun rolling out the [simple DVT module on the mainnet.](https://blog.lido.fi/simpledvt-new-phase-for-lido-on-ethereum/)
+  
 - [**Simple DVT: Obol Testnet Results**](https://blog.lido.fi/simpledvt-obol-testnet-results/)
 
 ![image](../assets/TheRoadMapDistributedValidatorTechnology/image6.webp)
 
 
-- [**Simple DVT: SSV Testnet Results](https://blog.lido.fi/simpledvt-ssv-testnet-results/)**
+- [**Simple DVT: SSV Testnet Results**](https://blog.lido.fi/simpledvt-ssv-testnet-results/)
 
 
 ![image](../assets/TheRoadMapDistributedValidatorTechnology/image7.webp)

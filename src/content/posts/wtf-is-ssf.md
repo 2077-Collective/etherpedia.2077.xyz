@@ -16,7 +16,7 @@ You may have seen this term on some complicated chart of things that have been b
 
 ![image](../assets/TheRoadmapEthereumWtfIsSSF/image1.webp)
 
-SSF is still technically quite far down `The Merge` roadmap, so we don’t expect it any time in the next few years. But if you are interested in what lies down the road (maybe because you need a greater dose of hopium 🎈), let’s dig more into it!
+SSF is still technically quite far down **<span class="text-red-500">The Merge</span>** roadmap, so we don’t expect it any time in the next few years. But if you are interested in what lies down the road (maybe because you need a greater dose of hopium 🎈), let’s dig more into it!
 
 **Before we go any further, it would help to digest the terms first…**
 

@@ -2,7 +2,7 @@
 title: "WTF is SSF?"
 description: "Single Slot Finality (SSF)"
 pubDate: "Jul 16 2024 14:58:06"
-heroImage: "/wtf-is-ssh.webp"
+heroImage: "/wtf-is-ssf.webp"
 authors:
   - name: "Agrimony"
     twitterHandle: "agriimony"

@@ -2,7 +2,7 @@
 title: "The Roadmap: Rollup Scaling"
 description: "A rollup is a separate blockchain that processes transactions off-chain."
 pubDate: "Jul 01 2024 12:00:03"
-heroImage: "/rollups.png"
+heroImage: "/rollups.webp"
 authors:
   - name: "Alex Hook"
     twitterHandle: "alexhooketh"

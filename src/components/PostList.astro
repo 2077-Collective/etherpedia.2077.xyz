@@ -1,0 +1,45 @@
+---
+import { PostService, type Post } from '../services/PostsService';
+import FormattedDate from './FormattedDate.astro';
+
+type Props = {
+    showMax?: number;
+};
+
+const posts: Post[] = (await PostService.getPosts()).slice(0, Astro.props.showMax);
+---
+
+  <ul class="grid grid-flow-row sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+    {
+      posts
+        .sort((post, post2) => {
+          if (post.createdAt == post2.createdAt) {
+            return 0;
+          } else if (post.createdAt < post2.createdAt) {
+            return 1;
+          } else {
+            return -1;
+          }
+        })
+        .map((post: Post) => (
+          <li class="rounded-xl border">
+            <a href={`/posts/${post.slug}/`}>
+              <img
+                width={720}
+                height={360}
+                src={post.thumb}
+                class="rounded-xl"
+                alt=""
+              />
+              <div class="p-4">
+                <h4 class="text-xl">{post.title}</h4>
+                <p>
+                  {post.author && <i>by {post.author} - </i>}
+                  <FormattedDate date={post.createdAt} />
+                </p>
+              </div>
+            </a>
+          </li>
+        ))
+    }
+  </ul>

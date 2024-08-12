@@ -4,13 +4,8 @@ import Header from "../components/Header.astro";
 import EtherpediaLogo from "../content/logo.png";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { Image } from "astro:assets";
-import FormattedDate from "../components/FormattedDate.astro";
-import { getCollection } from "astro:content";
 import Search from "astro-pagefind/components/Search";
-
-const posts = (await getCollection("posts")).sort(
-  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
-);
+import PostList from "../components/PostList.astro";
 ---
 
 <!doctype html>
@@ -54,46 +49,7 @@ const posts = (await getCollection("posts")).sort(
 
       <section class="mt-8 p-8 max-w-screen-xl mx-auto">
         <label class="text-2xl font-bold">Latest releases</label>
-        <ul class="grid grid-flow-row sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-          {
-            posts
-              .sort((post, post2) => {
-                if (post.data.pubDate == post2.data.pubDate) {
-                  return 0;
-                } else if (post.data.pubDate < post2.data.pubDate) {
-                  return 1;
-                } else {
-                  return -1;
-                }
-              })
-              .slice(0, 6)
-              .map((post: any) => (
-                <li class="rounded-xl border">
-                  <a href={`/posts/${post.slug}/`}>
-                    <img
-                      width={720}
-                      height={360}
-                      src={post.data.heroImage}
-                      class="rounded-xl"
-                      alt=""
-                    />
-                    <div class="p-4">
-                      <h4 class="text-xl">{post.data.title}</h4>
-                      <p>
-  {post.data.authors && (
-    <i>
-      by {post.data.authors.map((author: { name: string, twitterHandle: string }) => author.name).join(', ')} - 
-    </i>
-  )}
-  <FormattedDate date={post.data.pubDate} />
-</p>
-                    </div>
-                  </a>
-                </li>
-              ))
-          }
-        </ul>
-
+        <PostList showMax={6} />
         <a
           class="px-4 py-2 dark:bg-zinc-800 bg-zinc-100 rounded mt-4 inline-block"
           href="/posts">See all releases</a

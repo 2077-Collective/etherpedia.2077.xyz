@@ -5,7 +5,7 @@ pubDate: "Aug 20 2024 08:30:00"
 heroImage: "/restaking.webp"
 authors:
   - name: "Sankrit K"
-    twitterHandle: "sankritksan"
+    twitterHandle: "sankritsan"
 ---
 
 Staking emerged as a popular way to earn rewards and actively participate in network operations. By holding and locking up a certain amount of cryptocurrency, individuals can support the security and functionality of blockchain networks while earning passive income.
